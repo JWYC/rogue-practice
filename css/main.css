@@ -191,13 +191,11 @@ footer span {
 
 	}
 	.section-one{
-		display:flex;
 		flex-flow:column wrap;
 		width:30%;
 	}
 
 	.section-two{
-		display:flex;
 		flex-flow:column wrap;
 		width:30%;
 		padding:0 30px 30px 30px;
@@ -206,7 +204,6 @@ footer span {
 	}
 
 	.section-three{
-		display:flex;
 		flex-flow:column wrap;
 		width:30%;
 	}
