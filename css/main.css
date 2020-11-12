@@ -103,7 +103,7 @@ header nav ul li a{
 }
 
 .main-image {
-	background:url(../img/download.jpg)cover no-repeat;
+	/*background:url(../img/download.jpg)cover no-repeat;*/
 	background-size: cover;
 
 }
