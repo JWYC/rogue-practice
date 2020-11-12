@@ -99,7 +99,6 @@ header nav ul li a{
 	justify-content: center;
 	align-items:flex-start;
 	flex-flow:column wrap;
-	margin: 0 auto;
 }
 
 .main-image {
@@ -137,17 +136,16 @@ header nav ul li a{
 }
 
 .section-one h4 {
-	padding: 10px 0px;
+	padding: 10px 0px 0px 0px;
 }
 
 .section-two {
-	/*border-left: 1px solid #eee;
-	border-right: 1px solid #eee;*/
+
 }
 
 .section-two h4,
 .section-three h4 {
-	padding: 10px 0px;
+	padding: 10px 0px 0px 0;
 }
 
 .menu {
@@ -183,4 +181,38 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size:.875em;
+}
+/* --- tablet styles ---*/
+@media all and (min-width:768px){
+	.bottom-section{
+		flex-flow:row wrap;
+		justify-content:space-between;
+
+
+	}
+	.section-one{
+		display:flex;
+		flex-flow:column wrap;
+		width:30%;
+	}
+
+	.section-two{
+		display:flex;
+		flex-flow:column wrap;
+		width:30%;
+		padding:0 30px 30px 30px;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.section-three{
+		display:flex;
+		flex-flow:column wrap;
+		width:30%;
+	}
+}
+
+/*-- desktop styles ---*/
+@media all and (min-width:1200px){
+
 }
