@@ -11,9 +11,11 @@ body {
 
 .container{
 	max-width: 1200px;
+	width:90%;
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow:row wrap;
 	margin: 0 auto;
 
 }
@@ -42,7 +44,7 @@ h4 {
 p {
 	font-size: .875em;
 	line-height: 1.3125em;
-  padding: 0 30px;
+  padding: 0 0px;
 }
 
 /*The widths are in a percentage!*/
@@ -50,6 +52,8 @@ header {
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow:column wrap;
+	width:100%;
 	border-bottom: 3px solid #77a466;
 }
 
@@ -62,19 +66,26 @@ header h1 span {
 }
 
 header nav {
-
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
 	padding: 46px 0;
+	border-top: 3px solid #77a466;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
 }
 header nav ul li {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow:column wrap;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em;
 	padding: 0 10px;
-	/*display: inline;*/
 }
 header nav ul li a{
 	text-decoration: none;
@@ -86,12 +97,14 @@ header nav ul li a{
 .bottom-section {
 	display:flex;
 	justify-content: center;
-	align-items: center;
+	align-items:flex-start;
+	flex-flow:column wrap;
 	margin: 0 auto;
 }
 
 .main-image {
-	height: auto;
+	background:url(../img/download.jpg)cover no-repeat;
+	background-size: cover;
 
 }
 .main-image img {
@@ -117,23 +130,24 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+/*	width: 33%;*/
 	height: auto;
 	border-top: 1px solid #eee;
+
 }
 
 .section-one h4 {
-	padding: 10px 0;
+	padding: 10px 0px;
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	/*border-left: 1px solid #eee;
+	border-right: 1px solid #eee;*/
 }
 
 .section-two h4,
 .section-three h4 {
-	padding: 10px 30px;
+	padding: 10px 0px;
 }
 
 .menu {
@@ -141,7 +155,7 @@ header nav ul li a{
 	padding: 0;
 }
 .menu li {
-	padding: 10px 0;
+	padding: 10px 0px;
 	color:#77a466;
 }
 
@@ -152,7 +166,7 @@ header nav ul li a{
 }
 
 .address {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 24px;
 }
 
